@@ -41,7 +41,7 @@ class Circle extends Shape {
     }
 }
 
-Circle.getArea();
+Shape.getArea();
 
 var myRectangle = new Rectangle("Blue", 5, 10);
 myRectangle.getArea();
