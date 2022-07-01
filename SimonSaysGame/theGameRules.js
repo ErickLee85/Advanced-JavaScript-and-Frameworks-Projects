@@ -31,9 +31,9 @@ $(document).ready(function(){
                 var off = setTimeout(function() {
                     showLightSequence();
                     flashNo++
-                }, 500);
+                }, 300);
                 lightOn(flashNo);             
-             }, 500);
+             }, 300);
          }
         else {
             gameState = 'playing';
@@ -47,8 +47,6 @@ $(document).ready(function(){
         if(gameState == 'playing') {
             $(this).fadeOut("fast");
             $(this).fadeIn("fast");
-            $(this).slideToggle();
-            $(this).slideToggle();
     
             
             var selectedSquare = $(this).index();
@@ -66,7 +64,7 @@ $(document).ready(function(){
                 var off = setTimeout(function() {
                     lightOff();
                     clickedNo++;
-                }, 200);
+                }, 100);
             }
             else {
                 gameState = 'waiting';
